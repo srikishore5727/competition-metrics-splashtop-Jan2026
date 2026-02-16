@@ -292,7 +292,8 @@ useEffect(() => {
                 SEO & AI Visibility
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-12 tracking-tight uppercase">
-                Competition Analysis - Jan 2026
+                Competition Analysis
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight uppercase">Jan 2026</h1>
               </h1>
               <div className="flex flex-wrap items-center justify-center gap-3">
                 <button className="flex items-center gap-2 px-4 py-2.5 bg-white border border-gray-200 rounded-full hover:bg-gray-50 transition-colors shadow-sm">

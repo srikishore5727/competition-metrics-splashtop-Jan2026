@@ -96,12 +96,12 @@ export const KeywordGapSlide = () => {
         
         {/* Header / Filter Area */}
         <div className="p-6 pb-4">
-          <div className="flex items-start gap-4">
+          <div className="flex items-center gap-4"> 
             <div className="w-12 h-12 rounded-2xl bg-orange-50 flex items-center justify-center flex-shrink-0">
               <Search className="text-orange-500" size={24} />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-gray-900">Competitive Keyword Comparison</h3>
+              {/* <h3 className="text-lg font-bold text-gray-900">Competitive Keyword Comparison</h3> */}
               <p className="text-sm text-gray-500 mt-1">
                 {activeTab === 'untapped' 
                   ? 'At least one competitor ranks for these keywords, but Splashtop does not rank.' 
