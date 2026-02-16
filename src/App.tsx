@@ -249,6 +249,32 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
+  // Keyboard navigation from parent iframe (Webflow fix)
+useEffect(() => {
+  const handleMessage = (event: MessageEvent) => {
+    const allowedOrigins = [
+      "https://competition-metrics-splashtop-jan20.vercel.app/",
+      "https://lwstaging.webflow.io",
+      "https://www.leadwalnut.com"
+    ];
+
+    if (!allowedOrigins.includes(event.origin)) return;
+
+    if (event.data?.type === "KEY_NAV") {
+      if (event.data.key === "ArrowRight") {
+        setActiveSlide(prev => Math.min(prev + 1, totalSlides - 1));
+      }
+      if (event.data.key === "ArrowLeft") {
+        setActiveSlide(prev => Math.max(prev - 1, 0));
+      }
+    }
+  };
+
+  window.addEventListener("message", handleMessage);
+  return () => window.removeEventListener("message", handleMessage);
+}, [totalSlides]);
+
+
   const renderContent = () => {
     switch (activeSlide) {
       case 0:
