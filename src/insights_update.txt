@@ -1,0 +1,81 @@
+COMPREHENSIVE INSIGHT UPDATES - ALL SLIDES
+
+This file contains all the updated insight descriptions (under 100 characters with specific data).
+Format: "Metric Start→End (Oct-Jan, +/-%Change) brief insight"
+
+===== SLIDE 2: ORGANIC TRAFFIC OVERVIEW =====
+[✓ DONE] Splashtop's Stable Performance: "Splashtop stable 345k-385k (Oct-Jan), maintaining consistent visibility."
+[✓ DONE] AnyDesk's Market Decline: "AnyDesk drops 9.3M→8.9M (Oct-Jan, -4.3%), opportunity for Splashtop."
+[✓ DONE] Splashtop's Brand Recognition: "Branded 195k→165k (Oct-Jan, -15.4%) seasonal decline with strong recognition."
+[✓ DONE] AnyDesk's Branded Searches: "AnyDesk branded 9M→7.8M (Oct-Jan, -13.3%). TeamViewer 4.5M→3.8M."
+[✓ DONE] Splashtop's Content Strategy: "Non-branded 179k-191k nearly equals branded, strong content strategy."
+[✓ DONE] AnyDesk's Non-Branded Growth: "AnyDesk non-branded 344k→1.03M (Oct-Jan, +199%) exceptional growth."
+
+===== SLIDE 4: KEYWORD PERFORMANCE =====
+[✓ DONE] Splashtop's Keyword Expansion: "Keywords 51k→57k (Oct-Jan, +11%) highest growth among competitors."
+[✓ DONE] AnyDesk's Keyword Footprint: "AnyDesk 97k→89k (Oct-Jan, -8.2%). Splashtop growth closes the gap."
+[✓ DONE] Splashtop's Page 1 Growth: "Page 1: 6k→8k (Oct-Jan, +33%) highest growth, effective optimization."
+[✓ DONE] TeamViewer's Market Leadership: "TeamViewer stable 11k Page 1. Splashtop 6k→8k growth challenges lead."
+
+===== SLIDE 6: REMOTE ACCESS =====
+[✓ DONE] Splashtop's Competitive Coverage: "Keywords 399→380 (Oct-Jan, -5%) competitive with TeamViewer."
+[✓ DONE] AnyDesk's Limited Reach: "AnyDesk 259-295 trails Splashtop. Leadership opportunity available."
+[✓ DONE] Splashtop's Traffic Growth: "Traffic 1.5k→2.8k (Oct-Jan, +81%) strong keyword conversion growth."
+[✓ DONE] TeamViewer's Volatile Pattern: "TeamViewer volatile, peaks 5.8k. Splashtop steady growth advantage."
+[✓ DONE] Splashtop's Page 1 Presence: "Page 1: 297→321 (Oct-Jan, +8%) competing with TeamViewer."
+[✓ DONE] TeamViewer's Consistent Leadership: "TeamViewer stable 336-339. Splashtop growth challenges leadership."
+
+===== SLIDE 7: REMOTE DESKTOP =====
+[✓ DONE] Splashtop's Category Leadership: "Keywords 523→556 (Oct-Jan, +6%) leads category vs TeamViewer 350-402."
+[✓ DONE] AnyDesk's Declining Coverage: "AnyDesk 588→512 (Oct-Jan, -13%). Splashtop capitalizes on decline."
+[✓ DONE] Splashtop's Growing Traffic: "Traffic 1.0k→2.1k (Oct-Jan, +101%) volatile growth, healthy baseline."
+[✓ DONE] AnyDesk's Market Volatility: "AnyDesk volatile, spikes 6.3k. Splashtop stability creates opportunity."
+[✓ DONE] Splashtop's Exceptional Growth: "Page 1: 305→392 (Oct-Jan, +28%) strongest category performance."
+[✓ DONE] AnyDesk's Stable Leadership: "AnyDesk stable 356-376. Splashtop 305→392 closing the gap fast."
+
+===== SLIDE 8: REMOTE SUPPORT =====
+[PENDING] Splashtop's Stable Positioning: "Keywords 80→80 (Oct-Jan, stable) matches TeamViewer, AnyDesk in IT segment."
+[PENDING] BeyondTrust's Dramatic Decline: "BeyondTrust 104→73 (Oct-Jan, -30%) content issues, Splashtop opportunity."
+[PENDING] Splashtop's Consistent Growth: "Traffic 506→561 (Oct-Jan, +11%) consistent growth, effective optimization."
+[PENDING] BeyondTrust's Volatility: "BeyondTrust volatile 1.4k-2.8k. Splashtop steady growth advantage."
+[PENDING] Splashtop's Page 1 Momentum: "Page 1: 64→67 (Oct-Jan, +5%) improving quality in support terms."
+[PENDING] TeamViewer's Steady Authority: "TeamViewer stable 77-80. Splashtop 64→67 builds momentum."
+
+===== SLIDE 9: REMOTE CONNECTION =====
+[PENDING] Splashtop's Niche Presence: "Keywords 10-11 stable in connection niche for technical users."
+[PENDING] TeamViewer's Category Dominance: "TeamViewer dominates 39-41. Splashtop maintains solid niche presence."
+[PENDING] Splashtop's Exceptional Growth: "Traffic 26→60 (Oct-Jan, +131%) strongest category performance."
+[PENDING] TeamViewer's Traffic Instability: "TeamViewer unstable 84-154. Splashtop 26→60 consistent growth."
+[PENDING] Splashtop's Quality Rankings: "Page 1: 7→8 (Oct-Jan, +14%) 70-80% ratio shows quality."
+[PENDING] TeamViewer's Page 1 Dominance: "TeamViewer 32-35 dominates. Splashtop strong 70-80% Page 1 ratio."
+
+===== SLIDE 10: SECURE REMOTE =====
+[PENDING] Splashtop's Security Leadership: "Keywords 17-19 leads category, 2x TeamViewer, strong enterprise security."
+[PENDING] BeyondTrust's Position: "BeyondTrust 8-10 trails. Splashtop 17-19 dominates security messaging."
+[PENDING] Splashtop's Traffic Performance: "Traffic 235→239 (Oct-Jan, +2%) 3-5x TeamViewer volume."
+[PENDING] BeyondTrust's Market Dominance: "BeyondTrust leads traffic 1.6k-2.2k. Splashtop quality over quantity."
+[PENDING] Splashtop's Page 1 Dominance: "Page 1: 16-18 (85-95%) market-leading visibility for security searches."
+[PENDING] BeyondTrust's Security Authority: "BeyondTrust 8-9 (90%). Splashtop 16-18 is visible security leader."
+
+===== SLIDE 12: AI KEYWORDS ANALYSIS =====
+[PENDING] Splashtop's AI Keyword Growth: "AI Keywords 1.1k→1.8k (Oct-Jan, +58%) strongest momentum in AI visibility."
+[PENDING] TeamViewer's AI Leadership: "TeamViewer 1.7k-1.8k leads. Splashtop 1.1k→1.8k nearly matches."
+[PENDING] Splashtop's Branded AI Growth: "Branded AI 85→142 (Oct-Jan, +67%) improving brand in AI results."
+[PENDING] TeamViewer's Branded AI Authority: "TeamViewer branded AI 733 dominates. Splashtop 85→142 rapid growth."
+[PENDING] Splashtop's Non-Branded AI Leadership: "Non-branded AI 1.0k→1.6k (Oct-Jan, +57%) outpaces competitors."
+[PENDING] TeamViewer's Non-Branded AI Presence: "TeamViewer 1.0k stable. Splashtop 1.0k→1.6k shows authority."
+
+===== SLIDE 13: AI TRAFFIC ANALYSIS =====
+[PENDING] Splashtop's AI Traffic Surge: "AI Traffic 4k→11k (Oct-Jan, +175%) exceptional AI Overview performance."
+[PENDING] TeamViewer's Traffic Volatility: "TeamViewer volatile 10k-55k. Splashtop 4k→11k steady growth."
+[PENDING] Splashtop's Stable Brand Presence: "Branded AI 766-1.0k stable brand presence in AI results."
+[PENDING] TeamViewer's Branded AI Traffic: "TeamViewer branded 6k-10k volatile. Splashtop stability advantage."
+[PENDING] Splashtop's Non-Branded AI Dominance: "Non-branded AI 3k→10k (Oct-Jan, +233%) market-leading performance."
+[PENDING] TeamViewer's Non-Branded AI Spike: "TeamViewer spikes 45k (Jan). Splashtop 3k→10k sustainable growth."
+
+===== SLIDE 15: BACKLINK PERFORMANCE =====
+[PENDING] Splashtop's Domain Growth: "Domains 15.9k→17.1k (Oct-Jan, +7.3%) consistent link building momentum."
+[PENDING] TeamViewer's Domain Decline: "TeamViewer 124k→117k (Oct-Jan, -5.4%) declining authority, opportunity."
+[PENDING] Splashtop's Quality Profile: "Backlinks 1.2M-1.8M efficient profile, ~100 per domain quality focus."
+[PENDING] TeamViewer's Backlink Volume: "TeamViewer 10M-18.8M volatile. Splashtop quality over quantity strategy."
+
