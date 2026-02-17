@@ -10,39 +10,28 @@ interface KeywordData {
   teamviewer: number;
   anydesk: number;
   logmein: number;
+  category: 'untapped' | 'weak' | 'missing';
 }
 
 const data: KeywordData[] = [
-  { keyword: 'remote work setup', intent: 'Informational', volume: 1830000, kd: 43, splashtop: 0, teamviewer: 0, anydesk: 75, logmein: 0 },
-  { keyword: 'help desk solutions', intent: 'Commercial', volume: 1500000, kd: 52, splashtop: 0, teamviewer: 0, anydesk: 0, logmein: 76 },
-  { keyword: 'remote support', intent: 'Informational', volume: 4400, kd: 94, splashtop: 10, teamviewer: 6, anydesk: 4, logmein: 8 },
-  { keyword: 'desktop remote access', intent: 'Navigational', volume: 8100, kd: 99, splashtop: 0, teamviewer: 6, anydesk: 4, logmein: 29 },
-  { keyword: 'it support near me', intent: 'Transactional', volume: 8100, kd: 40, splashtop: 0, teamviewer: 0, anydesk: 0, logmein: 36 },
-  { keyword: 'remote desktop support', intent: 'Informational', volume: 720, kd: 90, splashtop: 10, teamviewer: 9, anydesk: 4, logmein: 6 },
-  { keyword: 'how to enable remote access', intent: 'Informational', volume: 590, kd: 33, splashtop: 93, teamviewer: 75, anydesk: 58, logmein: 70 },
-  { keyword: 'remote support tool', intent: 'Informational', volume: 260, kd: 66, splashtop: 44, teamviewer: 2, anydesk: 1, logmein: 6 },
-  { keyword: 'linux remote support', intent: 'Commercial', volume: 110, kd: 57, splashtop: 78, teamviewer: 9, anydesk: 2, logmein: 6 },
-  { keyword: 'asset management software', intent: 'Commercial', volume: 6600, kd: 55, splashtop: 0, teamviewer: 0, anydesk: 0, logmein: 36 },
-  { keyword: 'remote ctrl', intent: 'Informational', volume: 5400, kd: 50, splashtop: 0, teamviewer: 13, anydesk: 39, logmein: 0 },
-  { keyword: 'remote desktop app', intent: 'Informational', volume: 5400, kd: 91, splashtop: 0, teamviewer: 8, anydesk: 5, logmein: 31 },
-  { keyword: 'endpoint security solutions', intent: 'Commercial', volume: 2900, kd: 49, splashtop: 0, teamviewer: 0, anydesk: 0, logmein: 0 },
-  { keyword: 'how to screen share', intent: 'Informational', volume: 2900, kd: 50, splashtop: 0, teamviewer: 6, anydesk: 10, logmein: 0 },
-  { keyword: 'cloud network security', intent: 'Informational', volume: 2900, kd: 33, splashtop: 3, teamviewer: 0, anydesk: 0, logmein: 0 },
-  { keyword: 'cloud security posture', intent: 'Commercial', volume: 1000, kd: 35, splashtop: 8, teamviewer: 0, anydesk: 0, logmein: 0 },
-  { keyword: 'cloud cyber security', intent: 'Informational', volume: 720, kd: 53, splashtop: 92, teamviewer: 0, anydesk: 0, logmein: 0 },
-  { keyword: 'cloud security vulnerabilities', intent: 'Informational', volume: 390, kd: 33, splashtop: 16, teamviewer: 0, anydesk: 0, logmein: 0 },
-  { keyword: 'security on cloud storage', intent: 'Informational', volume: 390, kd: 37, splashtop: 17, teamviewer: 0, anydesk: 0, logmein: 0 },
-  { keyword: 'best cloud container security', intent: 'Commercial', volume: 260, kd: 6, splashtop: 13, teamviewer: 0, anydesk: 0, logmein: 0 },
+  { keyword: 'remote work setup', intent: 'Informational', volume: 1830000, kd: 43, splashtop: 0, teamviewer: 0, anydesk: 75, logmein: 0, category: 'untapped' },
+  { keyword: 'help desk solutions', intent: 'Commercial', volume: 1500000, kd: 52, splashtop: 0, teamviewer: 0, anydesk: 0, logmein: 76, category: 'untapped' },
+  { keyword: 'remote desktop support', intent: 'Informational', volume: 720, kd: 90, splashtop: 10, teamviewer: 9, anydesk: 4, logmein: 6, category: 'weak' },
+  { keyword: 'how to enable remote access', intent: 'Informational', volume: 590, kd: 33, splashtop: 93, teamviewer: 75, anydesk: 58, logmein: 70, category: 'weak' },
+  { keyword: 'asset management software', intent: 'Commercial', volume: 6600, kd: 55, splashtop: 0, teamviewer: 0, anydesk: 0, logmein: 36, category: 'untapped' },
+  { keyword: 'remote ctrl', intent: 'Informational', volume: 5400, kd: 50, splashtop: 0, teamviewer: 13, anydesk: 39, logmein: 0, category: 'untapped' },
+  { keyword: 'it support near me', intent: 'Transactional', volume: 8100, kd: 40, splashtop: 0, teamviewer: 0, anydesk: 0, logmein: 36, category: 'untapped' },
+  { keyword: 'desktop remote access', intent: 'Navigational', volume: 8100, kd: 99, splashtop: 0, teamviewer: 6, anydesk: 4, logmein: 29, category: 'missing' },
+  { keyword: 'linux remote support', intent: 'Commercial', volume: 110, kd: 57, splashtop: 0, teamviewer: 9, anydesk: 2, logmein: 6, category: 'missing' },
 ];
 
 export const KeywordGapSlide = () => {
-  const [activeTab, setActiveTab] = useState<'untapped' | 'weak'>('untapped');
+  const [activeTab, setActiveTab] = useState<'untapped' | 'weak' | 'missing'>('untapped');
   const [selectedFilter, setSelectedFilter] = useState<'all' | 'cloud' | 'ai'>('all');
 
   const filteredData = data.filter(item => {
     // Filter by tab
-    if (activeTab === 'untapped' && item.splashtop > 0) return false;
-    if (activeTab === 'weak' && item.splashtop === 0) return false;
+    if (item.category !== activeTab) return false;
     
     // Filter by category
     if (selectedFilter === 'cloud' && !item.keyword.includes('cloud')) return false;
@@ -56,6 +45,19 @@ export const KeywordGapSlide = () => {
     return vol.toLocaleString();
   };
 
+  const getDescription = () => {
+    switch (activeTab) {
+      case 'untapped':
+        return 'Untapped keywords are search terms for which at least one of Splashtop\'s primary competitors ranks, while Splashtop does not.';
+      case 'weak':
+        return 'Weak keywords are search terms for which all of Splashtop\'s primary competitors rank higher than Splashtop.';
+      case 'missing':
+        return 'Missing keywords are search terms for which the majority of Splashtop\'s competitors rank, but Splashtop does not.';
+      default:
+        return '';
+    }
+  };
+
   return (
     <div className="flex-1 flex flex-col h-full bg-white p-8 font-sans">
       {/* Page Title */}
@@ -63,7 +65,6 @@ export const KeywordGapSlide = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 tracking-tight">Keyword Gap</h2>
         <div className="flex items-center justify-between">
           <p className="text-sm text-gray-500 font-medium">Splashtop vs. Competitors - Strategic Opportunities</p>
-          <p className="text-xs text-gray-400 font-medium">Source: Semrush</p>
         </div>
       </div>
 
@@ -77,7 +78,7 @@ export const KeywordGapSlide = () => {
               : 'bg-gray-100 text-gray-500 hover:bg-gray-200 border border-transparent'
           }`}
         >
-          Untapped Keyword
+          Untapped Keywords
         </button>
         <button 
           onClick={() => setActiveTab('weak')}
@@ -87,7 +88,17 @@ export const KeywordGapSlide = () => {
               : 'bg-gray-100 text-gray-500 hover:bg-gray-200 border border-transparent'
           }`}
         >
-          Weak Keyword
+          Weak Keywords
+        </button>
+        <button 
+          onClick={() => setActiveTab('missing')}
+          className={`px-8 py-3 rounded-t-lg text-sm font-semibold transition-colors ${
+            activeTab === 'missing' 
+              ? 'bg-white text-red-600 border-t border-x border-gray-200 shadow-[0_-2px_4px_rgba(0,0,0,0.02)]' 
+              : 'bg-gray-100 text-gray-500 hover:bg-gray-200 border border-transparent'
+          }`}
+        >
+          Missing Keywords
         </button>
       </div>
 
@@ -96,16 +107,14 @@ export const KeywordGapSlide = () => {
         
         {/* Header / Filter Area */}
         <div className="p-6 pb-4">
-          <div className="flex items-center gap-4"> 
+          <div className="flex items-start gap-4">
             <div className="w-12 h-12 rounded-2xl bg-orange-50 flex items-center justify-center flex-shrink-0">
               <Search className="text-orange-500" size={24} />
             </div>
             <div>
-              {/* <h3 className="text-lg font-bold text-gray-900">Competitive Keyword Comparison</h3> */}
+              <h3 className="text-lg font-bold text-gray-900">Competitive Keyword Comparison</h3>
               <p className="text-sm text-gray-500 mt-1">
-                {activeTab === 'untapped' 
-                  ? 'At least one competitor ranks for these keywords, but Splashtop does not rank.' 
-                  : 'Splashtop ranks for these keywords but performs lower than competitors.'}
+                {getDescription()}
               </p>
             </div>
           </div>

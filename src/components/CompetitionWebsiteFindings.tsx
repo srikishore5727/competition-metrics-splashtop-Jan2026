@@ -57,7 +57,7 @@ export const CompetitionWebsiteFindings: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex-1 flex flex-col overflow-hidden bg-gray-50">
+    <>
       {/* Fullscreen Image Modal */}
       {fullscreenImage && (
         <div 
@@ -80,18 +80,18 @@ export const CompetitionWebsiteFindings: React.FC = () => {
       )}
 
       {/* Header */}
-      <div className="pt-8 pb-6 px-8">
+      <div className="mb-6">
         <h2 className="text-3xl font-bold text-gray-900 mb-1">Web Experience</h2>
         <p className="text-sm text-blue-600 font-medium">Strategic Observations from Competitor Websites</p>
       </div>
 
       {/* Tab Cards */}
-      <div className="px-8 pb-6">
+      <div className="mb-6">
         <div className="grid grid-cols-3 gap-4">
           <TabCard
             icon={<Home size={20} className="text-red-500" />}
             title="Home page updates"
-            company="AnyDesk"
+            company="AnyDesk & BeyondTrust"
             bgColor="bg-red-50"
             iconBgColor="bg-red-100"
             isActive={activeTab === 'breadcrumbs'}
@@ -118,8 +118,8 @@ export const CompetitionWebsiteFindings: React.FC = () => {
         </div>
       </div>
 
-      {/* Content Area */}
-      <div className="flex-1 overflow-y-auto px-8 pb-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+      {/* Content Area - No internal scrolling, let parent handle it */}
+      <div className="pb-8">
         {/* Conditional Tab Content */}
         {activeTab === 'takeaways' && (
           <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm mb-6">
@@ -138,11 +138,11 @@ export const CompetitionWebsiteFindings: React.FC = () => {
                 <span className="text-xs font-semibold text-gray-600 flex-shrink-0">Publish date:</span>
                 <span className="text-xs text-gray-700">Feb 9, 2026</span>
               </div>
-              <div className="border border-gray-200 rounded-lg overflow-hidden max-w-4xl max-w-4xl">
+              <div className="border border-gray-200 rounded-lg overflow-hidden max-w-4xl">
                 <img 
                   src={preDigitalEmployee} 
                   alt="Pre-digital employee experience" 
-                  className="w-full h-auto max-h-[400px] object-contain h-auto max-h-[400px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
+                  className="w-full h-auto max-h-[400px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
                   onClick={() => setFullscreenImage(preDigitalEmployee)}
                 />
               </div>
@@ -180,12 +180,12 @@ export const CompetitionWebsiteFindings: React.FC = () => {
                   <span className="text-xs font-semibold text-gray-600 flex-shrink-0">Publish date:</span>
                   <span className="text-xs text-gray-700">Nov 3, 2025</span>
                 </div>
-                <div className="grid grid-colgrid grid-cols-2 ga-2 gap-3">
+                <div className="grid grid-cols-2 gap-3">
                   <div className="border border-gray-200 rounded-lg overflow-hidden">
                     <img 
                       src={zeroTrustAttacks} 
                       alt="Zero trust attacks statistics" 
-                      className="w-full h-auto max-h-[300px] object-contain h-auto max-h-[300px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
+                      className="w-full h-auto max-h-[300px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
                       onClick={() => setFullscreenImage(zeroTrustAttacks)}
                     />
                   </div>
@@ -193,7 +193,7 @@ export const CompetitionWebsiteFindings: React.FC = () => {
                     <img 
                       src={zeroTrustThreats} 
                       alt="Zero trust threats analysis" 
-                      className="w-full h-auto max-h-[300px] object-contain h-auto max-h-[300px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
+                      className="w-full h-auto max-h-[300px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
                       onClick={() => setFullscreenImage(zeroTrustThreats)}
                     />
                   </div>
@@ -223,11 +223,11 @@ export const CompetitionWebsiteFindings: React.FC = () => {
                   <span className="text-xs font-semibold text-gray-600 flex-shrink-0">Publish date:</span>
                   <span className="text-xs text-gray-700">Jan 13, 2026</span>
                 </div>
-                <div className="border border-gray-200 rounded-lg overflow-hidden max-w-4xl max-w-4xl">
+                <div className="border border-gray-200 rounded-lg overflow-hidden max-w-4xl">
                   <img 
                     src={otSecurity} 
                     alt="OT security privileged remote access" 
-                    className="w-full h-auto max-h-[300px] object-contain h-auto max-h-[300px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
+                    className="w-full h-auto max-h-[300px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
                     onClick={() => setFullscreenImage(otSecurity)}
                   />
                 </div>
@@ -248,71 +248,68 @@ export const CompetitionWebsiteFindings: React.FC = () => {
         )}
 
         {/* Additional Sections Below */}
-        <div className="space-y-6">
-          {/* Home Page Updates - Only show when on breadcrumbs tab */}
-          {activeTab === 'breadcrumbs' && (
-            <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
-              <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <Home size={20} className="text-blue-600" />
-                Home page updates
-              </h3>
-              <div className="space-y-6">
-                {/* AnyDesk */}
-                <div className="space-y-3">
-                  <div className="flex items-start gap-2">
-                    <span className="text-xs font-semibold text-blue-600 flex-shrink-0">Page URL:</span>
-                    <a href="https://anydesk.com/en" target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 hover:underline">
-                      https://anydesk.com/en
-                    </a>
-                  </div>
-                  <p className="text-sm text-gray-700">
-                    <span className="font-semibold text-gray-900">AnyDesk</span> has introduced a pricing section in the Home page.
-                  </p>
-                  <div className="border border-gray-200 rounded-lg overflow-hidden max-w-4xl max-w-4xl">
+        {activeTab === 'breadcrumbs' && (
+          <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <Home size={20} className="text-blue-600" />
+              Home page updates
+            </h3>
+            <div className="space-y-6">
+              {/* AnyDesk */}
+              <div className="space-y-3">
+                <div className="flex items-start gap-2">
+                  <span className="text-xs font-semibold text-blue-600 flex-shrink-0">Page URL:</span>
+                  <a href="https://anydesk.com/en" target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 hover:underline">
+                    https://anydesk.com/en
+                  </a>
+                </div>
+                <p className="text-sm text-gray-700">
+                  <span className="font-semibold text-gray-900">AnyDesk</span> has introduced a pricing section in the Home page.
+                </p>
+                <div className="border border-gray-200 rounded-lg overflow-hidden max-w-4xl">
+                  <img 
+                    src={anydeskPricing} 
+                    alt="AnyDesk pricing section" 
+                    className="w-full h-auto max-h-[300px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
+                    onClick={() => setFullscreenImage(anydeskPricing)}
+                  />
+                </div>
+              </div>
+
+              {/* TeamViewer */}
+              <div className="pt-6 border-t border-gray-200 space-y-3">
+                <div className="flex items-start gap-2">
+                  <span className="text-xs font-semibold text-blue-600 flex-shrink-0">Page URL:</span>
+                  <a href="https://www.teamviewer.com/en-in/" target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 hover:underline">
+                    https://www.teamviewer.com/en-in/
+                  </a>
+                </div>
+                <p className="text-sm text-gray-700">
+                  <span className="font-semibold text-gray-900">TeamViewer</span> has changed their home page messaging more related to AI to cope up with the growing trend of AI related keywords over the past six months.
+                </p>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="border border-gray-200 rounded-lg overflow-hidden">
                     <img 
-                      src={anydeskPricing} 
-                      alt="AnyDesk pricing section" 
-                      className="w-full h-auto max-h-[300px] object-contain h-auto max-h-[300px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
-                      onClick={() => setFullscreenImage(anydeskPricing)}
+                      src={teamviewerAI} 
+                      alt="TeamViewer AI messaging" 
+                      className="w-full h-auto max-h-[300px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
+                      onClick={() => setFullscreenImage(teamviewerAI)}
                     />
                   </div>
-                </div>
-
-                {/* TeamViewer */}
-                <div className="pt-6 border-t border-gray-200 space-y-3">
-                  <div className="flex items-start gap-2">
-                    <span className="text-xs font-semibold text-blue-600 flex-shrink-0">Page URL:</span>
-                    <a href="https://www.teamviewer.com/en-in/" target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 hover:underline">
-                      https://www.teamviewer.com/en-in/
-                    </a>
-                  </div>
-                  <p className="text-sm text-gray-700">
-                    <span className="font-semibold text-gray-900">TeamViewer</span> has changed their home page messaging more related to AI to cope up with the growing trend of AI related keywords over the past six months.
-                  </p>
-                  <div className="grid grid-colgrid grid-cols-2 ga-2 gap-3">
-                    <div className="border border-gray-200 rounded-lg overflow-hidden">
-                      <img 
-                        src={teamviewerAI} 
-                        alt="TeamViewer AI messaging" 
-                        className="w-full h-auto max-h-[300px] object-contain h-auto max-h-[300px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
-                        onClick={() => setFullscreenImage(teamviewerAI)}
-                      />
-                    </div>
-                    <div className="border border-gray-200 rounded-lg overflow-hidden">
-                      <img 
-                        src={teamviewerTrends} 
-                        alt="TeamViewer trends" 
-                        className="w-full h-auto max-h-[300px] object-contain h-auto max-h-[300px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
-                        onClick={() => setFullscreenImage(teamviewerTrends)}
-                      />
-                    </div>
+                  <div className="border border-gray-200 rounded-lg overflow-hidden">
+                    <img 
+                      src={teamviewerTrends} 
+                      alt="TeamViewer trends" 
+                      className="w-full h-auto max-h-[300px] object-contain cursor-pointer hover:opacity-90 transition-opacity" 
+                      onClick={() => setFullscreenImage(teamviewerTrends)}
+                    />
                   </div>
                 </div>
               </div>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
-    </div>
+    </>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, BookOpen, FileText } from 'lucide-react';
+import { ExternalLink, BookOpen, FileText, Target } from 'lucide-react';
 
 interface PageItem {
   category: string;
@@ -91,6 +91,18 @@ export const SiteMapCompetitorsSlide = () => {
 
   const currentData = data[activeTab];
 
+  // Define the highlighted opportunities
+  const highlightedOpportunities = [
+    { tab: 'teamviewer', title: 'How Endpoint Management Elevates Employee Experience' },
+    { tab: 'beyondtrust', title: 'Unattended Support Sessions Use Cases' }
+  ];
+
+  const isHighlighted = (title: string) => {
+    return highlightedOpportunities.some(
+      opp => opp.tab === activeTab && opp.title === title
+    );
+  };
+
   return (
     <div className="flex-1 flex flex-col h-full bg-white font-sans overflow-hidden">
       {/* Header */}
@@ -151,20 +163,26 @@ export const SiteMapCompetitorsSlide = () => {
                   href={page.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white border border-gray-100 rounded-xl p-5 group hover:shadow-md transition-all flex justify-between items-start"
+                  className={`bg-white border rounded-xl p-5 group hover:shadow-md transition-all flex flex-col relative ${isHighlighted(page.title) ? 'border-2 border-orange-500 shadow-lg ring-2 ring-orange-100' : 'border-gray-100'}`}
                 >
-                  <div className="flex-1">
-                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1.5 group-hover:text-[#2196f3] transition-colors">
+                  {isHighlighted(page.title) && (
+                    <div className="absolute -top-2 -right-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-3 py-1 rounded-full flex items-center gap-1.5 shadow-lg">
+                      <Target size={12} className="flex-shrink-0" />
+                      <span className="text-[10px] font-bold uppercase tracking-wider">Target Opportunity</span>
+                    </div>
+                  )}
+                  <div className="flex justify-between items-start mb-2">
+                    <p className={`text-[10px] font-bold uppercase tracking-widest transition-colors ${isHighlighted(page.title) ? 'text-orange-500' : 'text-gray-400 group-hover:text-[#2196f3]'}`}>
                       {page.category}
                     </p>
-                    <h4 className="text-[15px] font-bold text-gray-900 leading-tight">
-                      {page.title}
-                    </h4>
-                    <p className="text-[11px] text-gray-400 mt-2 font-medium">
-                      Published: {page.date}
-                    </p>
+                    <ExternalLink size={16} className={`transition-colors flex-shrink-0 ${isHighlighted(page.title) ? 'text-orange-500' : 'text-gray-300 group-hover:text-[#2196f3]'}`} />
                   </div>
-                  <ExternalLink size={16} className="text-gray-300 group-hover:text-[#2196f3] transition-colors mt-0.5 flex-shrink-0" />
+                  <h4 className="text-[15px] font-bold text-gray-900 leading-tight mb-2">
+                    {page.title}
+                  </h4>
+                  <p className="text-[11px] text-gray-400 font-medium">
+                    Published: {page.date}
+                  </p>
                 </a>
               ))}
             </div>
