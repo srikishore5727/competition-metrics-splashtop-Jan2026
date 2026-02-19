@@ -33,109 +33,214 @@ import splashtopLogo from "figma:asset/2f757b0e357d4a9a99a716bc63cb73a52ca572cd.
 // --- DATA DEFINITIONS ---
 
 // Slide 1: Total Organic Traffic
+// const trafficData = [
+//   {
+//     month: "Oct 2025",
+//     splashtop: 385000,
+//     teamviewer: 5000000,
+//     anydesk: 9300000,
+//     beyondtrust: 198000,
+//     gotomypc: 73000,
+//   },
+//   {
+//     month: "Nov 2025",
+//     splashtop: 354000,
+//     teamviewer: 4700000,
+//     anydesk: 9300000,
+//     beyondtrust: 207000,
+//     gotomypc: 72000,
+//   },
+//   {
+//     month: "Dec 2025",
+//     splashtop: 363000,
+//     teamviewer: 4700000,
+//     anydesk: 9300000,
+//     beyondtrust: 186000,
+//     gotomypc: 88000,
+//   },
+//   {
+//     month: "Jan 2026",
+//     splashtop: 345000,
+//     teamviewer: 4600000,
+//     anydesk: 8900000,
+//     beyondtrust: 244000,
+//     gotomypc: 90000,
+//   },
+// ];
+
 const trafficData = [
   {
     month: "Oct 2025",
-    splashtop: 385000,
-    teamviewer: 5000000,
-    anydesk: 9300000,
-    beyondtrust: 198000,
-    gotomypc: 73000,
+    splashtop: 142000,
+    teamviewer: 500000,
+    anydesk: 416000,
+    beyondtrust: 58000,
+    gotomypc: 78000,
   },
   {
     month: "Nov 2025",
-    splashtop: 354000,
-    teamviewer: 4700000,
-    anydesk: 9300000,
-    beyondtrust: 207000,
-    gotomypc: 72000,
+    splashtop: 130000,
+    teamviewer: 478000,
+    anydesk: 407000,
+    beyondtrust: 55000,
+    gotomypc: 76000,
   },
   {
     month: "Dec 2025",
-    splashtop: 363000,
-    teamviewer: 4700000,
-    anydesk: 9300000,
-    beyondtrust: 186000,
-    gotomypc: 88000,
+    splashtop: 137000,
+    teamviewer: 522000,
+    anydesk: 418000,
+    beyondtrust: 52000,
+    gotomypc: 76000,
   },
   {
     month: "Jan 2026",
-    splashtop: 345000,
-    teamviewer: 4600000,
-    anydesk: 8900000,
-    beyondtrust: 244000,
-    gotomypc: 90000,
+    splashtop: 142000,
+    teamviewer: 551000,
+    anydesk: 427000,
+    beyondtrust: 46000,
+    gotomypc: 72000,
   },
 ];
 
 // Slide 2: Branded vs Non-Branded (Values converted to raw numbers for consistency)
+// const brandedData = [
+//   {
+//     month: "Oct 2025",
+//     splashtop: 195000,
+//     teamviewer: 4500000,
+//     anydesk: 9000000,
+//     beyondtrust: 37000,
+//     gotomypc: 57000,
+//   },
+//   {
+//     month: "Nov 2025",
+//     splashtop: 167000,
+//     teamviewer: 4000000,
+//     anydesk: 8900000,
+//     beyondtrust: 38000,
+//     gotomypc: 58000,
+//   },
+//   {
+//     month: "Dec 2025",
+//     splashtop: 173000,
+//     teamviewer: 3900000,
+//     anydesk: 8800000,
+//     beyondtrust: 32000,
+//     gotomypc: 77000,
+//   },
+//   {
+//     month: "Jan 2026",
+//     splashtop: 165000,
+//     teamviewer: 3800000,
+//     anydesk: 7800000,
+//     beyondtrust: 27000,
+//     gotomypc: 81000,
+//   },
+// ];
+
+// const nonBrandedData = [
+//   {
+//     month: "Oct 2025",
+//     splashtop: 190000,
+//     teamviewer: 507000,
+//     anydesk: 344000,
+//     beyondtrust: 161000,
+//     gotomypc: 16000,
+//   },
+//   {
+//     month: "Nov 2025",
+//     splashtop: 187000,
+//     teamviewer: 705000,
+//     anydesk: 414000,
+//     beyondtrust: 170000,
+//     gotomypc: 14000,
+//   },
+//   {
+//     month: "Dec 2025",
+//     splashtop: 191000,
+//     teamviewer: 801000,
+//     anydesk: 457000,
+//     beyondtrust: 154000,
+//     gotomypc: 10000,
+//   },
+//   {
+//     month: "Jan 2026",
+//     splashtop: 179000,
+//     teamviewer: 766000,
+//     anydesk: 1029000,
+//     beyondtrust: 216000,
+//     gotomypc: 9000,
+//   },
+// ];
+
 const brandedData = [
   {
     month: "Oct 2025",
-    splashtop: 195000,
-    teamviewer: 4500000,
-    anydesk: 9000000,
-    beyondtrust: 37000,
-    gotomypc: 57000,
+    splashtop: 103000,
+    teamviewer: 444000,
+    anydesk: 395000,
+    beyondtrust: 17000,
+    gotomypc: 70000,
   },
   {
     month: "Nov 2025",
-    splashtop: 167000,
-    teamviewer: 4000000,
-    anydesk: 8900000,
-    beyondtrust: 38000,
-    gotomypc: 58000,
+    splashtop: 82000,
+    teamviewer: 360000,
+    anydesk: 359000,
+    beyondtrust: 19000,
+    gotomypc: 70000,
   },
   {
     month: "Dec 2025",
-    splashtop: 173000,
-    teamviewer: 3900000,
-    anydesk: 8800000,
-    beyondtrust: 32000,
-    gotomypc: 77000,
+    splashtop: 93000,
+    teamviewer: 411000,
+    anydesk: 388000,
+    beyondtrust: 16000,
+    gotomypc: 71000,
   },
   {
     month: "Jan 2026",
-    splashtop: 165000,
-    teamviewer: 3800000,
-    anydesk: 7800000,
-    beyondtrust: 27000,
-    gotomypc: 81000,
+    splashtop: 93000,
+    teamviewer: 431000,
+    anydesk: 403000,
+    beyondtrust: 14000,
+    gotomypc: 67000,
   },
 ];
 
 const nonBrandedData = [
   {
     month: "Oct 2025",
-    splashtop: 190000,
-    teamviewer: 507000,
-    anydesk: 344000,
-    beyondtrust: 161000,
-    gotomypc: 16000,
+    splashtop: 39000,
+    teamviewer: 56000,
+    anydesk: 21000,
+    beyondtrust: 41000,
+    gotomypc: 8000,
   },
   {
     month: "Nov 2025",
-    splashtop: 187000,
-    teamviewer: 705000,
-    anydesk: 414000,
-    beyondtrust: 170000,
-    gotomypc: 14000,
+    splashtop: 48000,
+    teamviewer: 118000,
+    anydesk: 48000,
+    beyondtrust: 36000,
+    gotomypc: 6000,
   },
   {
     month: "Dec 2025",
-    splashtop: 191000,
-    teamviewer: 801000,
-    anydesk: 457000,
-    beyondtrust: 154000,
-    gotomypc: 10000,
+    splashtop: 45000,
+    teamviewer: 111000,
+    anydesk: 30000,
+    beyondtrust: 35000,
+    gotomypc: 5000,
   },
   {
     month: "Jan 2026",
-    splashtop: 179000,
-    teamviewer: 766000,
-    anydesk: 1029000,
-    beyondtrust: 216000,
-    gotomypc: 9000,
+    splashtop: 49000,
+    teamviewer: 120000,
+    anydesk: 24000,
+    beyondtrust: 31000,
+    gotomypc: 5000,
   },
 ];
 
@@ -2865,12 +2970,20 @@ useEffect(() => {
                   activeSlide !== 19 &&
                   activeSlide !== 20 &&
                   activeSlide !== 21 && (
-                    <span className="text-xs text-gray-500 font-medium">
-                      Source:{" "}
-                      {activeSlide >= 6 && activeSlide <= 11
-                        ? "Ahrefs"
-                        : "Semrush"}
-                    </span>
+                    <div className="flex flex-col items-end mr-1">
+                      {/* Source Text */}
+                      <span className="text-xs text-gray-500 font-medium leading-tight">
+                        Source:{" "}
+                        {activeSlide >= 6 && activeSlide <= 11
+                          ? "Ahrefs"
+                          : "Semrush"}
+                      </span>
+                      
+                      {/* Location Tag - Logic: If slide 16 "Worldwide", else "US" */}
+                      <span className="text-[9px] font-semibold text-gray-600 bg-gray-100 border border-gray-200 px-1.5 rounded mt-0.5 leading-tight">
+                        Location: {activeSlide === 16 || activeSlide === 15 ? "Worldwide" : "US"}
+                      </span>
+                    </div>
                   )}
                 <button
                   onClick={() =>
