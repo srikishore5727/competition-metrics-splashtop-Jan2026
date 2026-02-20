@@ -2752,7 +2752,7 @@ useEffect(() => {
               </h2>
 
               {/* Two Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 max-w-3xl mx-auto">
                 {/* Card 1 - Content Gap */}
                 <div
                   onClick={() => setActiveSlide(18)}
@@ -2797,7 +2797,9 @@ useEffect(() => {
 
                 <div
                   onClick={() => setActiveSlide(20)}
-                  className="bg-white border border-gray-200 rounded-2xl p-8 text-left hover:shadow-lg transition-shadow cursor-pointer"
+                  className="bg-white border border-gray-200 rounded-2xl p-8 text-left 
+             hover:shadow-lg transition-shadow cursor-pointer
+             md:col-span-2 md:max-w-md w-full"
                 >
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-green-100 rounded-xl mb-4">
                     <Target
