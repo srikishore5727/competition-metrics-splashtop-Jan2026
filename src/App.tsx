@@ -2752,7 +2752,7 @@ useEffect(() => {
               </h2>
 
               {/* Two Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 max-w-3xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
                 {/* Card 1 - Content Gap */}
                 <div
                   onClick={() => setActiveSlide(18)}
@@ -2794,7 +2794,29 @@ useEffect(() => {
                   </p>
                   <div className="w-10 h-1 bg-orange-500 rounded-full mt-4"></div>
                 </div>
+
+                <div
+                  onClick={() => setActiveSlide(20)}
+                  className="bg-white border border-gray-200 rounded-2xl p-8 text-left hover:shadow-lg transition-shadow cursor-pointer"
+                >
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-green-100 rounded-xl mb-4">
+                    <Target
+                      size={24}
+                      className="text-green-500"
+                      strokeWidth={2.5}
+                    />
+                  </div>
+                  <h3 className="font-bold text-gray-900 text-lg mb-2">
+                    Web Experience
+                  </h3>
+                  <p className="text-gray-500 text-sm">
+                    Competitive landscape insights
+                  </p>
+                  <div className="w-10 h-1 bg-green-500 rounded-full mt-4"></div>
+                </div>
               </div>
+
+              
 
               {/* Strategic Analysis Label */}
               <p className="text-xs font-semibold tracking-widest text-gray-400 uppercase">
@@ -2975,12 +2997,12 @@ useEffect(() => {
                       <span className="text-xs text-gray-500 font-medium leading-tight">
                         Source:{" "}
                         {activeSlide >= 6 && activeSlide <= 11
-                          ? "Ahrefs"
+                          ? "Ahref"
                           : "Semrush"}
                       </span>
                       
                       {/* Location Tag - Logic: If slide 16 "Worldwide", else "US" */}
-                      <span className="text-[9px] font-semibold text-gray-600 bg-gray-100 border border-gray-200 px-1.5 rounded mt-0.5 leading-tight">
+                      <span className="text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 px-1.5 rounded mt-0.5 leading-tight">
                         Location: {activeSlide === 16 || activeSlide === 15 ? "Worldwide" : "US"}
                       </span>
                     </div>
