@@ -1431,7 +1431,7 @@ useEffect(() => {
                   <InsightCard
                     type="warning"
                     icon={BarChart3}
-                    title="AnyDesk &TeamViewer Overall Organic Traffic Decline"
+                    title="AnyDesk & TeamViewer Overall Organic Traffic Decline"
                     description="AnyDesk: 9.3M → 8.9M (-4.3%). TeamViewer: 5M → 4.6M (-8%)."
                   />
                 </>
@@ -1446,7 +1446,7 @@ useEffect(() => {
                   <InsightCard
                     type="warning"
                     icon={BarChart3}
-                    title="AnyDesk's&TeamViewer Branded Traffic Decline"
+                    title="AnyDesk's & TeamViewer Branded Traffic Decline"
                     description="AnyDesk: 9M → 7.8M (Oct–Jan, -13.3%). TeamViewer: 4.5M → 3.8M (Oct–Jan, -15.6%)."
                   />
                 </>
@@ -1461,7 +1461,7 @@ useEffect(() => {
                   <InsightCard
                     type="success"
                     icon={TrendingUp}
-                    title="AnyDesk's&TeamViewer Non-Branded Traffic Growth"
+                    title="AnyDesk's & TeamViewer Non-Branded Traffic Growth"
                     description="AnyDesk: 344K → 1.03M (+199%). TeamViewer: 507K → 766K (+51%)"
                   />
                 </>

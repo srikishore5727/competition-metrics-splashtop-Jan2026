@@ -91,7 +91,7 @@ export const CompetitionWebsiteFindings: React.FC = () => {
           <TabCard
             icon={<Home size={20} className="text-red-500" />}
             title="Home page updates"
-            company="AnyDesk & BeyondTrust"
+            company="AnyDesk & TeamViewer"
             bgColor="bg-red-50"
             iconBgColor="bg-red-100"
             isActive={activeTab === 'breadcrumbs'}
